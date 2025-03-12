@@ -1,5 +1,5 @@
 <?php
-// api/coach.php
+
 
 // Required headers
 header("Access-Control-Allow-Origin: *");
