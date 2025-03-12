@@ -1,5 +1,5 @@
 <?php
-// api/trainee.php
+
 
 // Required headers
 header("Access-Control-Allow-Origin: *");
