@@ -4,8 +4,8 @@
 class Database {
     private $host = "localhost";
     private $db_name = "swimming_management";
-    private $username = "root"; // Change this
-    private $password = ""; // Change this
+    private $username = "root"; 
+    private $password = ""; 
     private $conn;
 
     public function getConnection() {
