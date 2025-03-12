@@ -1,5 +1,4 @@
 <?php
-// models/Coach.php
 
 class Coach {
     private $conn;
