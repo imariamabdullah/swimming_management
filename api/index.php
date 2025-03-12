@@ -1,5 +1,5 @@
 <?php
-// api/index.php
+
 
 // Headers
 header("Access-Control-Allow-Origin: *");
