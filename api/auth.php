@@ -1,5 +1,5 @@
 <?php
-// api/auth.php
+
 
 // Required headers
 header("Access-Control-Allow-Origin: *");
