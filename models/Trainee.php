@@ -1,5 +1,5 @@
 <?php
-// models/Trainee.php
+
 
 class Trainee {
     private $conn;
