@@ -1,5 +1,5 @@
 <?php
-// api/performance.php
+
 
 // Required headers
 header("Access-Control-Allow-Origin: *");
