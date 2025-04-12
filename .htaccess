@@ -1,0 +1,27 @@
+# .htaccess
+
+# Enable URL rewriting
+RewriteEngine On
+
+# Base directory of the application
+RewriteBase /swimming-management/
+
+# If the requested file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all requests to index.php
+RewriteRule ^(.*)$ api/index.php?url=$1 [QSA,L]
+
+# Set default character set
+AddDefaultCharset UTF-8
+
+# Disable directory browsing
+Options -Indexes
+
+# Set default index page
+DirectoryIndex index.php
+
+# Handle errors
+ErrorDocument 404 /swimming-management/api/index.php
+ErrorDocument 500 /swimming-management/api/index.php

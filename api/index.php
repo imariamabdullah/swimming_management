@@ -12,6 +12,13 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 $request_uri = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 $uri_segments = explode('/', $request_uri);
 
+
+echo json_encode([
+    "request_uri" => $request_uri,
+    "segments" => $uri_segments
+]);
+exit;
+
 // Routes handling
 if (isset($uri_segments[2])) {
     switch ($uri_segments[2]) {
